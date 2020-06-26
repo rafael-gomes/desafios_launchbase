@@ -38,10 +38,24 @@ server.get ("/about", function (req, res) {
     return res.render("about", {about})
 })
 
+server.get("/course", function (req, res) {
+    const id = req.query.id
+
+    const course = courses.find(function (course) {
+        return course.id == id
+    })
+
+    if (!course) {
+        res.status(404).render("not-found");
+    }
+        
+    return res.render("course", { item: course })
+})
+
 server.listen(5000, function () {
     console.log("Server is running")
 })
 
 server.use(function(req, res) {
     res.status(404).render("not-found");
-});
+})

@@ -179,8 +179,22 @@ iframe {
     top: 5%;
 }
 
-/* .modal .maximize {
+/* Site Page */
+
+.site {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.card__site-container {
+    position: relative;
+    padding-top: 62.5%;
+}
+
+
+.card__site-container iframe {
     width: 100%;
     height: 100%;
-    transition: 400ms;
-} */
+    position: absolute;
+    top: 0;
+}
