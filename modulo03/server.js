@@ -38,8 +38,8 @@ server.get ("/about", function (req, res) {
     return res.render("about", {about})
 })
 
-server.get("/course", function (req, res) {
-    const id = req.query.id
+server.get("/course/:id", function (req, res) {
+    const id = req.params.id
 
     const course = courses.find(function (course) {
         return course.id == id
