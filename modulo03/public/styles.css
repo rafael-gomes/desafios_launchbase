@@ -11,13 +11,11 @@
     border: 0;
 }
 body {
-    /* background: rgb(113, 89, 193); */
     background: #282a36;
     font-family: 'Roboto', sans-serif;
 }
 header {
     padding: 30px;
-    /* border-bottom: 1px solid #333; */
     background: rgba(0, 0, 0, 0.1);
 }
 .links {
@@ -129,47 +127,6 @@ header {
     padding: 5px 20px;
     border-radius: 20px;
     text-align: center;
-}
-
-/* Modal */
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: 400ms;
-}
-
-.modal {
-    background-color:  white;
-    width: 90%;
-    height: 90%;
-    margin: 5vh auto;
-    position: relative;
-}
-
-.modal .close-modal {
-    color: black;
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    cursor: pointer;
-    margin-bottom: 5px;
-}
-.modal .maximize-modal {
-    color: black;
-    position: absolute;
-    right: 48px;
-    top: 8px;
-    cursor: pointer;
-}
-/* Modal.Active */
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
 }
 
 iframe {
